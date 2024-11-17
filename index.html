@@ -150,7 +150,15 @@
     </div>
 </body>
 <script>
-    let datetxt = "1/1/2003";
+    var audio = document.createElement("AUDIO")
+    document.body.appendChild(audio);
+    audio.src = "./images/SINHNHAT.mp3"
+
+    document.body.addEventListener("mousemove", function () {
+        audio.play()
+    })
+
+    let datetxt = "19/11/2007";
     let datatxtletter = "Happy birthday! Gửi Quân thân yêu, chúc cậu sinh nhật thật hạnh phúc, tràn đầy niềm vui, sức khỏe dồi dào và luôn đạt được mọi mục tiêu; cảm ơn vì đã luôn là người bạn tuyệt vời, luôn lắng nghe và chia sẻ, mong rằng trong năm nay cậu sẽ tiếp tục tỏa sáng và có thêm nhiều trải nghiệm đáng nhớ, hãy luôn tỏa sáng như chính con người cậu nhé! 🎂✨ Hi vọng thứ này sẽ giúp bạn tiến bộ trong học tập: https://short.com.vn/nCAb";
     let titleLetter = "Gửi tới Hoàng Quân";
     let charArrDate = datetxt.split('');
